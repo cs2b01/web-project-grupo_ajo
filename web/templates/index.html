@@ -1,61 +1,481 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Chat</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/libs/bootstrap.min.js" ></script>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/img/favicon.png" type="image/png">
+    <title>RUN</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -/static/-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
 </head>
-<body>
-    <div align="center" width="80%">
-        <div class="alert alert-primary" role="alert">
-          CS2B01 - Platform-Based Development - 2019-I
-        </div>
-        <img src="/static/images/cs.png"/>
-        <div class="alert alert-primary" role="alert">
-            GRUPO
-        </div>
+<body onload="close()">
 
-        <div style="width: 60%">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
-                  <th scope="col">Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td></td>
-                  <td></td>
-                  <td>@utec.edu.pe</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td></td>
-                  <td></td>
-                  <td>@utec.edu.pe</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td></td>
-                  <td></td>
-                  <td>@utec.edu.pe</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td></td>
-                  <td></td>
-                  <td>@utec.edu.pe</td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
+    <!--================Header Menu Area =================-->
+    
+    <header class="header_area">    
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="/static/index.html"><img src="/static/img/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="/static/index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/static/price.html">Cursos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/static/contact.html">Contáctanos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/static/login.html">Intranet</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-button">
+                            <ul>
+                                <li><a class="sign_up" href="/static/login.html">Intranet</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <!--================Header Menu Area =================-->
 
-    </div>
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                        <div class="banner_content">
+                            <h3>Aprende más<br/>y descubre un nuevo mundo</h3>
+                            <p>Hoy en día la tecnología es parte de nuestra vida y la programación una poderosa herramienta. Empieza hoy y adéntrate en una nueva aventura.</p>
+                            <a class="banner_btn" href="/static/price.html">Cursos<i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Service  Area =================-->
+    <section class="service-area area-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-pencil-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Metodología Única</h5>
+                            <p>Nos enfocamos en que las clases sean didácticas y se ajusten al ritmo de aprendizaje de cada alumno. Para lograr esto les damos las herramientas y la confianza para que se desenvuelvan durante la clase.</p>
+                            <a href="#">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-image"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Práctica Constante</h5>
+                            <p>Se incentiva a los alumnos a practicar fuera del aula de clases con ejercicios que reten sus conocimientos y los hagan expandir lo aprendido de una forma lúdica y divertida.</p>
+                            <a href="#">Más Infromación</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-headphone-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Apoyo Continuo</h5>
+                            <p>Los alumnos reciben apoyo constante para su aprendizaje tanto durante la clase como fuera de ella. Para eso, pueden consultar sus dudas en cualquier momento de la semana y siempre resivirán nuestor apoyo.</p>
+                            <a href="#">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--================Service Area end =================-->
+
+
+    <!--================About  Area =================-->
+    <section class="about-area area-padding-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="area-heading">
+                        <h4>El mundo de la <br>Programación. </h4>
+                        <h6>La programación es nuestra nueva mejor amiga.¡Vamos a conocerla! </h6>
+
+                        <p>¿Qué es lo primero que piensas cuando digo programador? La mayoría ven al típico sujeto con una capucha y una laptop con pantalla negra con letra fosforecente. Pues en realidad es mucho más que eso.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="single-about">
+                                <div class="about-icon">
+                                    <i class="ti-thought"></i>
+                                </div>
+                                <div class="single-about-content">
+                                    <h5>Mitos</h5>
+                                    <p>"Son hackers". Casi, pero no. Algunos hacen eso pero no todos. "Son antisociales".
+                                    A veces, pero también somos buenos amigos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="single-about">
+                                <div class="about-icon">
+                                    <i class="ti-user"></i>
+                                </div>
+                                <div class="single-about-content">
+                                    <h5>Realidad</h5>
+                                    <p>La programación es una forma de expresión que cualquiera puede utilizar, es
+                                        como un juego en el cual tu decides la reglas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================About Area End =================-->
+
+    <!--================Feature  Area =================-->
+    <section class="feature-area area-padding bg_one">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="offset-lg-6 col-lg-6">
+                    <div class="area-heading light">
+                        <h4>Aplicación móvil <br>fácil de usar</h4>
+                        <p>Muy pronto estará disponible la aplicación móvil de RUN, ahí podrás revisar todo
+                            nuestro contenido desde la comodidad de tu celular</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="ti-layers"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>Interfaz intuitiva</h5>
+                                    <p>La interfaz móvil será muy fácil de usar y permitirá a los usuarios adaptarse de inmediato. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="ti-layers"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>+ Preguntas rápidas</h5>
+                                    <p>En la nueva plataforma incluiremos preguntas rápidas sobre los temas vistos para reforzar el aprendizaje e los estudiantes. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Feature Area End =================-->
+
+
+    <!--================About  Area =================-->
+    <section class="statics-area area-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5">
+                    <div class="image-box">
+                        <img src="/static/img/banner/about3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="offset-lg-1 col-lg-6">
+                    <div class="area-heading">
+                        <h4>¿Qué puedo hacer si <br>aprendo a programar? </h4>
+                        <h6>Puedes estar en todas partes, asi como la tecnología.</h6>
+
+                        <p>Las posibilidades son infinitas podemos descubrir, crear, inventar y mejorar la tecnlogía que nos rodea, el límite es nuestra imaginación. ¿Qué esperas para empezar?</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-paint-bucket"></i>
+                        <p>Think: Imagina, no te pongas límites.</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-check-box"></i>
+                        <p>Inspire: Inspirate y empieza a crear.</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-ruler-pencil"></i>
+                        <p>Code: Just code it.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================About Area End =================-->
+
+
+
+
+
+    <!--================ Start Portfolio Area =================-->
+    <section class="pricing_area area-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="area-heading">
+                        <h4>Nuestros cursos</h4>
+                        <p>Tenemos cursos para todos los niveles y todas las edades. Es hora de embarcarse en esta aventura.</p>
+                    </div>
+                </div>
+                <div class="col-sm-5
+                 col-lg-2">
+                </div>
+                <div class="col-sm-7 col-lg-4">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-bag"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Python Básico</h5>
+                            <h4>S/.180<span class="currency_line">/</span><span>mes</span></h4>
+                            <ul>
+                                <li>Conceptos básicos</li>
+                                <li>Profesores didácticos</li>
+                                <li>Ejercicios variados</li>
+                                <li>Evaluación continua</li>
+                                <li>Ambiente cálido</li>
+                            </ul>
+                            <a href="#">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-lg-4">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-game"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Python Intermedio</h5>
+                            <h4>S/.180<span class="currency_line">/</span><span>mes</span></h4>
+                            <ul>
+                                <li>Nuevas librerías - Pygame</li>
+                                <li>Profesores didácticos</li>
+                                <li>Ejercicios variados</li>
+                                <li>Evaluación continua</li>
+                                <li>Ambiente cálido</li>
+                            </ul>
+                            <a href="#">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Pricing Area =================-->
+
+
+
+    <!--================ Start Blog Area =================-->
+    <section class="latest-blog-area area-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="area-heading">
+                        <h4>Lee nuestras últimas noticias</h4>
+                        <p>Todos los días pasan cosas increíbles, acompañanos a decubrir unas cuantas.</p>
+                    </div>           
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-6 ">
+                    <div class="single-blog full_image">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="/static/img/blog/5.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Update / Python</p>
+                            <p class="date">06-Junio-2019</p>
+                            <h4>
+                                <a href="https://jaxenter.com/python-3-8-beta-1-159152.html">Python 3.8.0 beta 1 ha
+                                    llegado: ¿Ya has visto las  <br>nuevas características de v3.8?</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 02 Comentarios</p>
+                                <p><i class="ti-heart"></i> 15 </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="/static/img/blog/2.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Python / Java</p>
+                            <p class="date">05-Junio-2019</p>
+                            <h4>
+                                <a href="https://www.techrepublic.com/article/java-vs-python-which-programming-language
+                                -is-more-popular-for-developers/">Java vs. Python: ¿Qué lenguaje de programación es más
+                                    popular para los desarrolladores?</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 08 Comentarios</p>
+                                <p><i class="ti-heart"></i> 30 </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="/static/img/blog/1.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Python / Tools</p>
+                            <p class="date">04-Junio-2019</p>
+                            <h4>
+                                <a href="https://jaxenter.com/python-panel-data-159212.html">
+                                    Cree herramientas interactivas de exploración de datos y aplicaciones
+                                    web con Python en el Panel.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 11 Comentarios</p>
+                                <p><i class="ti-heart"></i> 34 </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-8 col-md-6">
+                    <div class="single-blog full_image">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="/static/img/blog/4.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Python / Blockchain</p>
+                            <p class="date">March 10, 2019</p>
+                            <h4>
+                                <a href="https://hub.packtpub.com/containers-and-python-are-in-demand-but-
+                                blockchain-is-all-hype-says-skill-up-developer-survey/">Los contenedores y Python
+                                    están en demanda, pero Blockchain es todo un bombo, dice la encuesta de
+                                    desarrolladores de Skill Up.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 00 Comments</p>
+                                <p><i class="ti-heart"></i>316</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Blog Area =================-->
+
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget"></div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos un grupo de estudiantes de quiere reducir las brechas tecnológicas y brindar herramientas para el desarrollo del país.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Contacto</h4>
+                    <div class="footer-address">
+                        <p>Contacto : Universidad de Ingeniería y Tecnología - UTEC. Jr. Medrano Silva 165.</p>
+                        <span>Phone : +51 951 538 602</span>
+                        <span>Phone : +51 943 610 349</span>
+                        <span>Email : codeenmicole@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center text-left text-lg-center no-gutters">
+            <div class="col-lg-12 col-md-12 text-center text-lg-center footer-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- ================ End footer Area ================= -->
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script href="/static/js/jquery-2.2.4.min.js"></script>
+<script href="/static/js/popper.js"></script>
+<script href="/static/js/bootstrap.min.js"></script>
+<script href="/static/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script href="/static/js/jquery.ajaxchimp.min.js"></script>
+<script href="/static/js/waypoints.min.js"></script>
+<script href="/static/js/mail-script.js"></script>
+<script href="/static/js/contact.js"></script>
+<script href="/static/js/jquery.form.js"></script>
+<script href="/static/js/jquery.validate.min.js"></script>
+<script href="/static/js/mail-script.js"></script>
+<script href="/static/js/theme.js"></script>
+<script>
+    function close(){
+    window.location.hash="no-back-button";
+    window.location.hash="Again-No-back-button";//esta linea es necesaria para chrome
+    window.onhashchange=function(){window.location.hash="no-back-button";}
+    }
+</script>
+
 </body>
 </html>

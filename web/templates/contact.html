@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/themify-icons.css')}}">-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/img/favicon.png" type="image/png">
+    <title>RUN</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="contacts.js"></script>
+</head>
+<body>
+
+    <!--================Header Menu Area =================-->
+    <header class="header_area">    
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="/static/index.html"><img src="/static/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="/static/index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/static/price.html">Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/static/contact.html">Contáctanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/static/login.html">Intranet</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-button">
+                        <ul>
+                            <li><a class="sign_up" href="/static/login.html">Intranet</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+
+    <!--================Hero Banner Area Start =================-->
+    <section class="hero-banner d-flex align-items-center">
+        <div class="container text-center">
+            <h2>Contáctanos</h2>
+            <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/static/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contáctanos</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!--================Hero Banner Area End =================-->
+
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section area-padding">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.663833136039!2d-77.0243431501622!3d-12.
+        135137946811234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7fcaea4a133%3A0xb86fbddb0dc89e2e!2sUni
+        versity+of+Engineering+and+Technology!5e0!3m2!1sen!2spe!4v1560559264541!5m2!1sen!2spe" width="100%" height="480px"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Escríbenos</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="6" placeholder="Ingresa el mensaje"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Ingresa tu nombre">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" placeholder="Ingresa tu dirección de correo electrónico">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Ingresa el asunto">
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="button" onclick="getData()" class="button button-contactForm" value="Enviar Mensaje" />
+            </div>
+          </form>
+
+        </div>
+
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>Lima, Perú</h3>
+              <p>Jr. Medrano Silva, 165</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3><a href="tel:454545654">+51 943 610 349</a></h3>
+              <p>Lunes a Sábado 9am a 6pm</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3><a href="mailto:support@colorlib.com">codeenmicole@hotmail.com</a></h3>
+              <p>Envianos tu opinión</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->
+
+ <!-- ================ start footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget"></div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos un grupo de estudiantes de quiere reducir las brechas tecnológicas y brindar herramientas para el desarrollo del país.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Contacto</h4>
+                    <div class="footer-address">
+                        <p>Contacto : Universidad de Ingeniería y Tecnología - UTEC. Jr. Medrano Silva 165.</p>
+                        <span>Phone : +51 951 538 602</span>
+                        <span>Phone : +51 943 610 349</span>
+                        <span>Email : codeenmicole@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center text-left text-lg-center no-gutters">
+            <div class="col-lg-12 col-md-12 text-center text-lg-center footer-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+<!-- ================ End footer Area ================= -->
+
+
+<!--================Contact Success and Error message Area =================-->
+    <div id="success" class="modal modal-message fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h2>Thank you</h2>
+                    <p>Your message is successfully sent...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals error -->
+
+    <div id="error" class="modal modal-message fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h2>Sorry !</h2>
+                    <p> Something went wrong </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================End Contact Success and Error message Area =================-->
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/static/js/jquery-2.2.4.min.js"></script>
+<script src="/static/js/popper.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+<script src="/static/js/waypoints.min.js"></script>
+<script src="/static/js/mail-script.js"></script>
+<script src="/static/js/contact.js"></script>
+<script src="/static/js/jquery.form.js"></script>
+<script src="/static/js/jquery.validate.min.js"></script>
+<script src="/static/js/mail-script.js"></script>
+<script src="/static/js/theme.js"></script>
+</body>
+</html>
