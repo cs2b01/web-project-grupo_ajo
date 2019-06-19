@@ -1,16 +1,13 @@
-import time
-
 from flask import Flask, render_template, request, session, Response, redirect, url_for
 from flask_mail import Mail, Message
 import json
 from model import entities
 from database import connector
+import time
 
 db = connector.Manager()
 engine = db.createEngine()
 app = Flask(__name__)
-
-
 
 @app.route('/')
 def index():
